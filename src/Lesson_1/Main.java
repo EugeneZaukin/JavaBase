@@ -44,8 +44,11 @@ public class Main {
     }
 
     public static int eight(int a) {
-        if () {                // Я правильно понимаю что здесь должно быть два
-            if() {}             // оператора if друг в друге. но не могу сообразить как именно
+        if(a % 4 == 0 && a % 100 != 0 || a % 400 == 0) {
+            System.out.println("Год високосный");
+        } else {
+            System.out.println("Год невисокосный");
         }
+        return a;
     }
 }
