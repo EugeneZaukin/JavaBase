@@ -3,9 +3,10 @@ package Lesson_6.Animals;
 import Lesson_6.Main;
 
 public class Cat extends Animal{
+    public static int catCount = 0;
     public Cat(String name) {
         super(name);
-        Main.catCount++;
+        catCount++;
     }
 
     @Override

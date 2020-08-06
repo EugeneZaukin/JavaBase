@@ -3,9 +3,10 @@ package Lesson_6.Animals;
 import Lesson_6.Main;
 
 public class Dog extends Animal{
+    public static int dogCount = 0;
     public Dog(String name) {
         super(name);
-        Main.dogCount++;
+        dogCount++;
     }
 
     @Override
